@@ -30,7 +30,7 @@ import type {
   ReplayAdapter,
   ValidationResult,
   TakeoverOptions,
-} from './ReplayAdapter';
+} from '../../../../scripts/adapters/ReplayAdapter';
 
 // ── Feudalism transcript types (minimal, for adapter) ───────
 

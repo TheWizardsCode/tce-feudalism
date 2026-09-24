@@ -12,16 +12,16 @@
 
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, resolve } from 'path';
-import { createSeededRng } from '../src/core-engine/SeededRng';
+import { createSeededRng } from '../../../src/core-engine/SeededRng';
 import {
   setupFeudalismGame,
   executeTurn,
   discardTokens,
   isGameOver,
   getWinnerIndex,
-} from '../example-games/feudalism/FeudalismGame';
-import { FeudalismAiPlayer, GreedyStrategy } from '../example-games/feudalism/AiStrategy';
-import { FeudalismTranscriptRecorder } from '../example-games/feudalism/GameTranscript';
+} from '../FeudalismGame';
+import { FeudalismAiPlayer, GreedyStrategy } from '../AiStrategy';
+import { FeudalismTranscriptRecorder } from '../GameTranscript';
 
 // Deterministic RNG
 const rng = createSeededRng(42);
