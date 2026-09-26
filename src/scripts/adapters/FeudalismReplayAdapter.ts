@@ -9,7 +9,7 @@
  * each turn, so no state reconstruction is needed.
  *
  * @see ReplayAdapter  -- interface definition
- * @see example-games/feudalism/GameTranscript.ts  -- transcript types
+ * @see src/GameTranscript.ts  -- transcript types
  *
  * Related work items:
  * - CG-0MM0GQZA915EXA9K (Feudalism transcript pipeline)

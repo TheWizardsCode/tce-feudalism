@@ -20,7 +20,7 @@ import {
   executeTurn,
   type FeudalismSession,
   type TurnAction,
-} from '../../example-games/feudalism/FeudalismGame';
+} from '../../src/FeudalismGame';
 import {
   serializeFeudalismState,
   deserializeFeudalismState,
@@ -29,7 +29,7 @@ import {
   loadFeudalismCheckpoint,
   clearFeudalismCheckpoint,
   FEUDALISM_GAME_TYPE,
-} from '../../example-games/feudalism/FeudalismSaveLoad';
+} from '../../src/FeudalismSaveLoad';
 import { createSeededRng } from '@core-engine';
 
 // ── Test helpers ────────────────────────────────────────────

@@ -29,7 +29,7 @@ import {
   tierDisplayName,
   tierShortName,
   type ResourceTokens,
-} from '../../example-games/feudalism/FeudalismCards';
+} from '../../src/FeudalismCards';
 
 // ---------------------------------------------------------------------------
 // Deterministic RNG for reproducible tests

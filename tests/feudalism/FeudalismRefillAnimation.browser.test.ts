@@ -8,8 +8,8 @@
  */
 import { describe, it, expect, afterEach } from 'vitest';
 import Phaser from 'phaser';
-import type { FeudalismRenderer } from '../../example-games/feudalism/scenes/FeudalismRenderer';
-import type { Tier } from '../../example-games/feudalism/FeudalismCards';
+import type { FeudalismRenderer } from '../../src/scenes/FeudalismRenderer';
+import type { Tier } from '../../src/FeudalismCards';
 import {
   MARKET_X,
   MARKET_Y,
@@ -17,7 +17,7 @@ import {
   MARKET_CARD_H,
   MARKET_CARD_GAP,
   MARKET_TIER_GAP,
-} from '../../example-games/feudalism/scenes/FeudalismConstants';
+} from '../../src/scenes/FeudalismConstants';
 import { waitForScene } from '@core-tests/helpers/waitForScene';
 
 // ── Constants ───────────────────────────────────────────────
@@ -32,7 +32,7 @@ async function bootGame(): Promise<Phaser.Game> {
   document.body.appendChild(container);
 
   const { createFeudalismGame } = await import(
-    '../../example-games/feudalism/createFeudalismGame'
+    '../../src/createFeudalismGame'
   );
   const game = createFeudalismGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'FeudalismScene');

@@ -4,7 +4,7 @@ import {
   buildTokenEntries,
   getBonusRenderOrder,
   getTokenRenderOrder,
-} from '../../example-games/feudalism/scenes/FeudalismRenderHelpers';
+} from '../../src/scenes/FeudalismRenderHelpers';
 
 describe('FeudalismRenderHelpers', () => {
   it('returns token render order in default and reversed form', () => {

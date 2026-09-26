@@ -16,7 +16,7 @@ import {
   type FeudalismSession,
   type FeudalismPlayerState,
   type TurnAction,
-} from '../../example-games/feudalism/FeudalismGame';
+} from '../../src/FeudalismGame';
 import {
   type DevelopmentCard,
   type PatronTile,
@@ -28,7 +28,7 @@ import {
   MAX_RESERVED,
   MARKET_SIZE,
   type Tier,
-} from '../../example-games/feudalism/FeudalismCards';
+} from '../../src/FeudalismCards';
 import { createSeededRng } from '@core-engine/SeededRng';
 
 // ---------------------------------------------------------------------------

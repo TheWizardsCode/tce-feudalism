@@ -22,7 +22,7 @@ import {
   executeTurn,
   type FeudalismSession,
   type TurnAction,
-} from '../../example-games/feudalism/FeudalismGame';
+} from '../../src/FeudalismGame';
 import {
   serializeFeudalismState,
   deserializeFeudalismState,
@@ -30,7 +30,7 @@ import {
   loadFeudalismCheckpoint,
   createFeudalismSerializer,
   FEUDALISM_GAME_TYPE,
-} from '../../example-games/feudalism/FeudalismSaveLoad';
+} from '../../src/FeudalismSaveLoad';
 import { CheckpointManager } from '@core-engine';
 
 // ── Test helpers ────────────────────────────────────────────
@@ -411,7 +411,7 @@ describe('Resume turn phase correctness (CG-0MQZYDCMY007DHTI)', () => {
       // clearFeudalismCheckpoint is called in the onShowGameOver callback
       // but that's a scene-level concern. At the data level, verify that
       // the checkpoint clear function works correctly.
-      const { clearFeudalismCheckpoint } = await import('../../example-games/feudalism/FeudalismSaveLoad');
+      const { clearFeudalismCheckpoint } = await import('../../src/FeudalismSaveLoad');
       await clearFeudalismCheckpoint(store);
 
       expect(await loadFeudalismCheckpoint(store)).toBeNull();

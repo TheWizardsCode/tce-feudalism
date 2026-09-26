@@ -3,7 +3,7 @@ import {
   RandomStrategy,
   GreedyStrategy,
   FeudalismAiPlayer,
-} from '../../example-games/feudalism/AiStrategy';
+} from '../../src/AiStrategy';
 import {
   setupFeudalismGame,
   executeTurn,
@@ -11,10 +11,10 @@ import {
   validateAction,
   isGameOver,
   type FeudalismSession,
-} from '../../example-games/feudalism/FeudalismGame';
+} from '../../src/FeudalismGame';
 import {
   totalTokens,
-} from '../../example-games/feudalism/FeudalismCards';
+} from '../../src/FeudalismCards';
 import { createSeededRng } from '@core-engine/SeededRng';
 
 // ---------------------------------------------------------------------------

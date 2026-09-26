@@ -35,7 +35,7 @@ async function bootGame(): Promise<Phaser.Game> {
   document.body.appendChild(container);
 
   const { createFeudalismGame } = await import(
-    '../../example-games/feudalism/createFeudalismGame'
+    '../../src/createFeudalismGame'
   );
   const game = createFeudalismGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'FeudalismScene');

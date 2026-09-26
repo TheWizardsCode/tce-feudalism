@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import Phaser from 'phaser';
-import type { ResourceType } from '../../example-games/feudalism/FeudalismCards';
+import type { ResourceType } from '../../src/FeudalismCards';
 
 import { waitForScene } from '@core-tests/helpers/waitForScene';
 
@@ -12,7 +12,7 @@ async function bootGame(): Promise<Phaser.Game> {
   container.id = 'game-container';
   document.body.appendChild(container);
 
-  const { createFeudalismGame } = await import('../../example-games/feudalism/createFeudalismGame');
+  const { createFeudalismGame } = await import('../../src/createFeudalismGame');
   const game = createFeudalismGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'FeudalismScene');
   return game;

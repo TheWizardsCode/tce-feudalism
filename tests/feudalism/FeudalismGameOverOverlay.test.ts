@@ -5,7 +5,7 @@
  * included in the summary when both players have equal influence.
  */
 import { describe, it, expect } from 'vitest';
-import { getInfluence, getWinnerIndex, setupFeudalismGame } from '../../example-games/feudalism/FeudalismGame';
+import { getInfluence, getWinnerIndex, setupFeudalismGame } from '../../src/FeudalismGame';
 import { createSeededRng } from '@core-engine/SeededRng';
 
 // ---------------------------------------------------------------------------
